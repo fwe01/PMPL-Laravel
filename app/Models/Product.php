@@ -41,5 +41,4 @@ class Product extends Model
     public function wishlists(){
         return $this->hasMany(Wishlist::class)->whereNotNull('cart_id');
     }
-
 }
